@@ -14,3 +14,13 @@ Usage:
      <version>42460222cf</version>
   </dependency>
 </dependencies>
+
+
+```java
+LinearRegression lr = new LinearRegression();
+lr.train(List<Double> key, List<Double> values);
+System.out.println(lr.predict(double d));
+
+-LinearRegression
+-MultipleLinearRegression
+-PolynomialRegression
