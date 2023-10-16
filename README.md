@@ -1,4 +1,5 @@
-Usage
+Usage:
+```xml
 <repositories>
    <repository>
        <id>jitpack.io</id>
