@@ -1,4 +1,4 @@
-Artificial Intelligence
+An Artificial Intelligence
 Creating by Naphon Jangjit
 Testing by Iyaaut Kumpiranont
 Usage:
