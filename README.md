@@ -2,7 +2,8 @@ An Artificial Intelligence
 Creating by Naphon Jangjit
 Testing by Iyaaut Kumpiranont
 Usage:
-gradle:
+
+```gradle:
 dependencyResolutionManagement {
 		repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
 		repositories {
