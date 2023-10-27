@@ -7,7 +7,6 @@ import java.util.*;
 public class KNearestNeighbors {
 
     private Map<double[], Object> map = new HashMap<>();
-    private List<Object> valuesGroup = new ArrayList<>();
 
     public void train(List<double[]> dataPoints, List<Object> values) throws AIException {
 
@@ -23,12 +22,6 @@ public class KNearestNeighbors {
 
         for (int i = 0; i < size; i++) {
             map.put(dataPoints.get(i), values.get(i));
-        }
-
-        for (Object o : values) {
-            if (!valuesGroup.contains(o)) {
-                valuesGroup.add(o);
-            }
         }
     }
 
@@ -56,10 +49,6 @@ public class KNearestNeighbors {
 
         if (allEqual(nearestObject)) {
             return Arrays.asList(nearestObject.get(0));
-        }
-
-        if (allUnique(nearestObject)) {
-            return nearestObject;
         }
 
 
@@ -95,21 +84,6 @@ public class KNearestNeighbors {
         }
 
         return e == 0;
-
-    }
-
-    public boolean allUnique(List<Object> objects) {
-        boolean b = true;
-        for (int i = 0; i < objects.size(); i++) {
-            for (int j = i + 1; j < objects.size(); j++) {
-                if (objects.get(i).equals(objects.get(j))) {
-                    b = false;
-                    break;
-                }
-            }
-        }
-
-        return b;
 
     }
 
