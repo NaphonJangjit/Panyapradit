@@ -31,11 +31,8 @@ dependencyResolutionManagement {
 </dependencies>
 
 
-```java
-LinearRegression lr = new LinearRegression();
-lr.train(List<Double> key, List<Double> values);
-System.out.println(lr.predict(double d));
-
--LinearRegression
--MultipleLinearRegression
--PolynomialRegression
+Example Code:
+Linear Regression - https://github.com/iyapon/PanyapraditTest-LR-
+Multiple Linear Regression - https://github.com/iyapon/PanyapraditTest-MPL-
+Polynomial Regression - https://github.com/iyapon/PanyapraditTest-PR-
+K-Linear Regression - https://github.com/iyapon/PanyapraditTest-KNN-
